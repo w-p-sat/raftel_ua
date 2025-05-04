@@ -1,0 +1,27 @@
+.box{
+    max-width: 1920px;
+    min-height: 100vh;
+    background: linear-gradient(15deg, #0d5008, #0a4506, #073b04, #053103, #032702, #021d01, #011301, #000000);
+}
+.main{
+    padding: 0 25px 0px 25px;
+}
+.main_video{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.main_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px 0px 50px;
+}
+.main_box_sale{
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 40px;
+    text-shadow: 4px 4px 6px rgb(0, 0, 0);
+}

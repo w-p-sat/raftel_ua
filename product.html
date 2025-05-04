@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/nulstyle.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/tovar_main.css">
+    <link rel="stylesheet" href="./styles/slick.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="icon" href="./image/favikon.png" type="image/x-icon">
+    <title>RAFTEL</title>
+</head>
+
+<body>
+    <section class="box">
+        <header>
+            <div id="header_burgerMenu">
+                <span class="header_burgerMenu_line"></span>
+            </div>
+            <a href="./index.html">
+                <img class="logo" src="image/logo.png" alt="logo">
+            </a>
+            <div class="basket">
+                <a href="./checkout.html">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        stroke="#a97b07" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1" />
+                        <circle cx="20" cy="21" r="1" />
+                        <path d="M1 1h4l2.4 12.6a2 2 0 0 0 2 1.4h9.8a2 2 0 0 0 2-1.6l1.8-7.6H6" />
+                    </svg>
+                    <span id="cart-count"
+                        style="position:absolute; top:56px; right:70px; width:20px; height:20px; box-shadow: inset 0px 0px 5px 0px rgb(176, 176, 176); color:white; border-radius:4px; font-size:12px; text-align:center; line-height:20px; font-weight:bold;">
+                        0
+                    </span>
+                </a>
+            </div>
+            <section id="window_menu">
+                <div id="window_menu_box">
+                    <div class="window_menu_box_list">
+                        <div id="window_menu_closed"></div>
+                        <div id="category-menu">
+                            <div id="category-loader" style="display: none; text-align: center; padding: 20px;">
+                              <div class="spinner"></div>
+                            </div>
+                            <a href="">
+                                <p class="window_menu_box_list_link">Новинки</p>
+                            </a>
+                            <div id="category-subMenu"></div>
+                            <a href="./About_us.html">
+                                <p class="window_menu_box_list_link">Про нас</p>
+                            </a>
+                            <a href="./pay_delivery.html">
+                                <p class="window_menu_box_list_link">Оплата та доставка</p>
+                            </a>
+                            <a href="./return.html">
+                                <p class="window_menu_box_list_link">Обмін та повернення</p>
+                            </a>
+                            <a href="./User_Agreement.html">
+                                <p class="window_menu_box_list_link">Угода користовача</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <div id="loader" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <div class="spinner"></div>
+          </div>
+        <main style="display: none;" id="content">
+            <section class="main_product">
+                <div class="product-container">
+                    <div class="main-image">
+                        <img id="main-image" src="" alt="Product Image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img class="thumbnail" src="" alt="Thumbnail 1">
+                    </div>
+                </div>
+                <div class="info-container">
+                    <h2 class="product-name"></h2>
+                    <div class="slider_tovar">
+                        <div class="slider_boxik">
+                            <img src="" alt="">
+                        </div>
+                        <div class="slider_boxik">
+                            <img src="" alt="">
+                        </div>
+                        <div class="slider_boxik">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <p class="article"></p>
+                    <div class="info-container_price">
+                        <h3></h3>
+                        <h4><s></s></h4>
+                    </div>
+                    <nav class="info-container_underline"></nav>
+                    <h5>Оберіть колір</h5>
+                    <div class="color">
+                        <button class="color-btn"></button>
+                    </div>
+                    <h5>Розмір</h5>
+                    <div class="size">
+                        <button class="size-btn"></button>
+                    </div>
+                    <div class="box_buy">
+                        <div class="quantity-selector">
+                            <button class="minus-btn">-</button>
+                            <span class="quantity">1</span>
+                            <button class="plus-btn">+</button>
+                        </div>
+                        <button class="buy">Придбати</button>
+                    </div>
+                    <nav class="info-container_underline"></nav>
+                    <h5>Опис</h5>
+                    <p class="describe">
+                    </p>
+                    <p class="describe_t">
+                    </p>
+                    <nav class="info-container_underline"></nav>
+                </div>
+            </section>
+            <section class="coments">
+                <h2 class="coments_title">Відгуки</h2>
+                <div class="coments_flex">
+                    <form id="commentForm">
+                        <div class="rating-svg">
+                            <svg data-value="5" viewBox="0 0 24 24">
+                                <path d="M12 2l3 7h7l-5.5 4.5L18 22l-6-4-6 4 1.5-8.5L2 9h7z" />
+                            </svg>
+                            <svg data-value="4" viewBox="0 0 24 24">
+                                <path d="M12 2l3 7h7l-5.5 4.5L18 22l-6-4-6 4 1.5-8.5L2 9h7z" />
+                            </svg>
+                            <svg data-value="3" viewBox="0 0 24 24">
+                                <path d="M12 2l3 7h7l-5.5 4.5L18 22l-6-4-6 4 1.5-8.5L2 9h7z" />
+                            </svg>
+                            <svg data-value="2" viewBox="0 0 24 24">
+                                <path d="M12 2l3 7h7l-5.5 4.5L18 22l-6-4-6 4 1.5-8.5L2 9h7z" />
+                            </svg>
+                            <svg data-value="1" viewBox="0 0 24 24">
+                                <path d="M12 2l3 7h7l-5.5 4.5L18 22l-6-4-6 4 1.5-8.5L2 9h7z" />
+                            </svg>
+                        </div>
+                        <p id="svgRatingValue">Оцінка: 0</p>
+                        <input type="text" id="name" placeholder="Ваше ім’я" required>
+                        <input type="email" id="email" placeholder="Ваш Email" required>
+                        <textarea id="commentText" placeholder="Ваш коментар..."></textarea>
+                        <button class="coments_button" type="submit">Надіслати</button>
+                    </form>
+                    
+                    <div id="commentsContainer"></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer_logo">
+                <img src="image/logo.png" alt="logo">
+                <p class="footer_logo_text">© 2022—2025</p>
+                <p class="footer_logo_text">RAFTEL. Всі права захищені</p>
+            </div>
+            <div class="footer_about">
+                <h1>Клієнтам</h1>
+                <a href="./About_us.html">Про нас</a>
+                <a href="./pay_delivery.html">Оплата та доставка</a>
+                <a href="./return.html">Обмін та повернення</a>
+                <a href="./User_Agreement.html">Угода користувача</a>
+            </div>
+            <div class="footer_contacts">
+                <h1>Контактна інформація</h1>
+                <nav class="footer_contacts_viber">
+                    <img src="image/viber.png" alt="">
+                    <a href="viber://chat?number=+380505270310">
+                        <p>0505270310</p>
+                    </a>
+                </nav>
+                <a href="">
+                    <p class="footer_contacts_gmail">raftelstore.ua@gmail.com</p>
+                </a>
+                <p>Наші соцмережі</p>
+                <a href="https://www.facebook.com/profile.php?id=61559734116983">
+                    <img class="footer_contacts_facebook" src="image/facebook.png" alt="">
+                </a>
+            </div>
+            <div class="footer_maps">
+                <p>Київ, Україна</p>
+                <p>Графік роботи:</p>
+                <p>Будні: 10:00–20:00</p>
+                <p>СБ,НД: 10:00–18:00</p>
+            </div>
+        </footer>
+    </section>
+</body>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="./js/window menu.js"></script>
+<script src="./js/input.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/slick_tovar.js"></script>
+<script src="./js/basket.js"></script>
+<script src="./js/getCategories.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const loader = document.getElementById('loader');
+      const content = document.getElementById('content');
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('productId');
+    
+      if (!id) return console.error('Product ID не знайдено в URL');
+    
+      try {
+        const response = await fetch(`https://crm-raftel.vercel.app/api/products/${id}`);
+        const data = await response.json();
+        const product = data.product;
+    
+        if (!product || typeof product !== 'object') {
+          console.error('Некоректна відповідь від API');
+          return;
+        }
+    
+        const images = Array.isArray(product.images) ? product.images : [];
+    
+        // Головне зображення
+        if (images.length > 0) {
+          document.getElementById('main-image').src = images[0];
+        }
+    
+        // Мініатюри
+        const thumbnailsContainer = document.querySelector('.thumbnail-images');
+        thumbnailsContainer.innerHTML = images.map(img =>
+          `<img class="thumbnail" src="${img}" onclick="changeImage('${img}')" />`
+        ).join('');
+    
+        // Слайдер
+        const slider = document.querySelector('.slider_tovar');
+        slider.innerHTML = images.map(img =>
+        `<div class="slider_boxik"><img src="${img}" /></div>`
+        ).join('');
+    
+        if (typeof window.initSlider === 'function') {
+          window.initSlider();
+        }
+    
+        // Назва, артикул, ціна
+        document.querySelector('.product-name').textContent = product.name || '';
+        document.querySelector('.article').textContent = `Артикул: ${product.article || ''}`;
+        document.querySelector('.info-container_price h3').textContent = `${product.price || 0} грн`;
+        document.querySelector('.info-container_price h4').innerHTML = `<s>${product.price + (product.price * (product.discount / 100)) || 0} грн</s>`;
+    
+        // Опис
+        document.querySelector('.describe_t').innerHTML = (product.description || '').replace(/\n/g, '<br>');
+    
+        // Кольори
+        const colorContainer = document.querySelector('.color');
+        colorContainer.innerHTML = (product.color || []).map(c =>
+          `<button class="color-btn">${c}</button>`
+        ).join('');
+    
+        // Розміри
+        const sizeContainer = document.querySelector('.size');
+        sizeContainer.innerHTML = (product.size || []).map(s =>
+          `<button class="size-btn">${s}</button>`
+        ).join('');
+    
+        initCartActions();
+    
+        // Приховуємо спінер і показуємо контент
+        loader.style.display = 'none';
+        content.style.display = 'block';
+    
+      } catch (err) {
+        console.error('Помилка при завантаженні продукту:', err);
+      }
+    });
+    
+    window.changeImage = (src) => {
+      document.getElementById('main-image').src = src;
+    }
+    </script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('commentForm');
+        const ratingSvg = document.querySelectorAll('.rating-svg svg');
+        const svgRatingValue = document.getElementById('svgRatingValue');
+
+        let rating = null;
+
+        // Встановлення рейтингу при натисканні на зірку
+        ratingSvg.forEach((svg, index) => {
+            svg.addEventListener('click', () => {
+                rating = Number(svg.getAttribute('data-value')); // ✅ Читаємо правильне значення
+                svgRatingValue.textContent = `Оцінка: ${rating}`;
+
+                // Оновлюємо клас для кожної зірки
+                ratingSvg.forEach((s) => {
+                    const starValue = Number(s.getAttribute('data-value'));
+                    if (starValue <= rating) {
+                        s.classList.add('selected');
+                    } else {
+                        s.classList.remove('selected');
+                    }
+                });
+            });
+        });
+
+        // Функція для відображення коментарів
+        const renderComments = (comments) => {
+            const commentsContainer = document.getElementById('commentsContainer');
+            commentsContainer.innerHTML = ''; // Очищаємо контейнер перед виведенням
+
+            comments.forEach((comment) => {
+                const commentElement = document.createElement('div');
+                commentElement.classList.add('comment');
+
+                // Avatar (Тут використовується перша буква імені)
+                const avatar = document.createElement('svg');
+                avatar.setAttribute('width', '40');
+                avatar.setAttribute('height', '40');
+                avatar.setAttribute('viewBox', '0 0 40 40');
+                avatar.classList.add('avatar-svg');
+                avatar.innerHTML = `<p style="font-size: 18px; border-radius: 50px; display: flex; width: 40px; height: 40px; background-color: rgb(255, 215, 0); color: #fff; text-align: center; align-items: center;
+    justify-content: center;">${comment.name[0].toUpperCase()}</p>
+                `;
+
+                // Comment content
+                const content = document.createElement('div');
+                content.classList.add('comment-content');
+
+                const topRow = document.createElement('div');
+                topRow.classList.add('top-row');
+                const userName = document.createElement('h4');
+                userName.textContent = comment.name;
+                const timestamp = document.createElement('span');
+                timestamp.classList.add('timestamp');
+                timestamp.textContent = comment.date// Форматуємо дату
+
+                topRow.appendChild(userName);
+                topRow.appendChild(timestamp);
+
+                const ratingLine = document.createElement('div');
+                ratingLine.classList.add('rating-line');
+                ratingLine.textContent = `Оцінка: ${comment.stars} ★`;
+
+                const message = document.createElement('p');
+                message.textContent = comment.message;
+
+                content.appendChild(topRow);
+                content.appendChild(ratingLine);
+                content.appendChild(message);
+
+                commentElement.appendChild(avatar);
+                commentElement.appendChild(content);
+
+                commentsContainer.appendChild(commentElement);
+            });
+        };
+
+        // Завантаження коментарів при завантаженні сторінки
+        const loadComments = async () => {
+            try {
+                const productId = new URLSearchParams(window.location.search).get('productId');
+                const response = await fetch(`https://crm-raftel.vercel.app/api/products/${productId}`);
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    renderComments(data.product.comments); // Виводимо коментарі з об'єкта product
+                } else {
+                    alert('Не вдалося завантажити коментарі');
+                }
+            } catch (error) {
+                console.error('Помилка завантаження коментарів:', error);
+            }
+        };
+
+        loadComments(); // Завантажуємо коментарі при завантаженні сторінки
+
+        // Відправка форми на сервер
+        form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    let message = document.getElementById('commentText').value;
+    if (!message.trim()) {
+        message = ' '; // або 'Без коментаря'
+    }
+
+    if (!rating || !name || !email || !message) {
+        alert("Будь ласка, заповніть всі поля!");
+        return;
+    }
+
+    const commentData = {
+        stars: rating,
+        name,
+        email,
+        message,
+    };
+
+    try {
+        const productId = new URLSearchParams(window.location.search).get('productId');
+        const response = await fetch(`https://crm-raftel.vercel.app/api/addComent/${productId}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(commentData),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            // Зберігаємо інформацію про успішне додавання в sessionStorage
+            sessionStorage.setItem('commentAdded', 'true');
+
+            alert('Ваш коментар додано!');
+            loadComments(); // Оновлюємо список коментарів після додавання нового
+
+            // Перезавантажуємо сторінку
+            window.location.reload();
+        } else {
+            console.error("Помилка сервера:", {
+                status: response.status,
+                statusText: response.statusText,
+                response: data,
+            });
+            alert(`Помилка: ${data.message || "Невідома помилка"}`);
+        }
+    } catch (error) {
+        console.error("Fetch помилка:", error);
+    }
+});
+
+// Перевіряємо, чи був коментар успішно доданий після перезавантаження сторінки
+window.addEventListener('load', () => {
+    if (sessionStorage.getItem('commentAdded') === 'true') {
+        // Якщо коментар був успішно доданий, видаляємо запис з sessionStorage
+        sessionStorage.removeItem('commentAdded');
+    }
+});
+
+    });
+</script>
+
+
+</html>

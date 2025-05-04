@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/nulstyle.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/list.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="icon" href="./image/favikon.png" type="image/x-icon">
+    <title>RAFTEL</title>
+</head>
+
+<body>
+    <section class="box">
+        <header>
+            <div id="header_burgerMenu">
+                <span class="header_burgerMenu_line"></span>
+            </div>
+            <a href="./index.html">
+                <img class="logo" src="image/logo.png" alt="logo">
+            </a>
+            <div class="basket">
+                <a href="./checkout.html">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        stroke="#a97b07" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1" />
+                        <circle cx="20" cy="21" r="1" />
+                        <path d="M1 1h4l2.4 12.6a2 2 0 0 0 2 1.4h9.8a2 2 0 0 0 2-1.6l1.8-7.6H6" />
+                    </svg>
+                    <span id="cart-count"
+                        style="position:absolute; top:56px; right:70px; width:20px; height:20px; box-shadow: inset 0px 0px 5px 0px rgb(176, 176, 176); color:white; border-radius:4px; font-size:12px; text-align:center; line-height:20px; font-weight:bold;">
+                        0
+                    </span>
+                </a>
+            </div>
+            <section id="window_menu">
+                <div id="window_menu_box">
+                    <div class="window_menu_box_list">
+                        <div id="window_menu_closed"></div>
+                        <div id="category-menu">
+                            <div id="category-loader" style="display: none; text-align: center; padding: 20px;">
+                                <div class="spinner"></div>
+                            </div>
+                             
+                            <div id="category-subMenu"></div>
+                            <a href="./About_us.html">
+                                <p class="window_menu_box_list_link">Про нас</p>
+                            </a>
+                            <a href="./pay_delivery.html">
+                                <p class="window_menu_box_list_link">Оплата та доставка</p>
+                            </a>
+                            <a href="./return.html">
+                                <p class="window_menu_box_list_link">Обмін та повернення</p>
+                            </a>
+                            <a href="./User_Agreement.html">
+                                <p class="window_menu_box_list_link">Угода користовача</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <h1 class="main_title">Новинки</h1>
+            <div class="filter">
+                <div class="filter_size_price">
+                    
+                    <div class="slider-container">
+                        <label for="priceRange">Оберіть ціну до:</label>
+                        <input type="range" id="priceRange" min="0" max="10000" step="100" value="5000">
+                        <div class="price">Ціна до: <span id="priceValue">5000</span> грн</div>
+                    </div>
+                    <div class="filter_size_price_choos" style="padding-top: 15px; display: flex; justify-content: center; gap:20px; margin: 0 auto; flex-wrap: wrap;">
+                      <style>
+                        .checkbox-body{
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: center;
+                          align-items: center;
+                          gap: 5px;
+                        }
+                      </style>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="40"> 40
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="42"> 42
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="44"> 44
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="46"> 46
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="48"> 48
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="50"> 50
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="52"> 52
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="52"> 54
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="52"> 56
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="52"> 58
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="42-44"> 42-44
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="44-46"> 44-46
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="46-48"> 46-48
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="48-50"> 48-50
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="50-52"> 50-52
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="52-54"> 52-54
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="54-56"> 54-56
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="56-58"> 56-58
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="42-46"> 42-46
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="44-48"> 44-48
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="48-52"> 48-52
+                      </label>
+                      <label class="checkbox-body">
+                          <input type="checkbox" name="size" value="52-58"> 52-58
+                      </label>
+                  </div>
+                </div>
+
+                <div id="category-loader2" style="text-align: center; padding: 20px;">
+                    <div class="spinner"></div>
+                  </div>
+                  
+                <section class="list" id="product-list">
+
+                </section>
+                <div class="pagination">
+                    <button id="prevBtn">Попередня</button>
+                    <span id="pageNumber">1</span>
+                    <button id="nextBtn">Наступна</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_logo">
+                <img src="image/logo.png" alt="logo">
+                <p class="footer_logo_text">© 2022—2025</p>
+                <p class="footer_logo_text">RAFTEL. Всі права захищені</p>
+            </div>
+            <div class="footer_about">
+                <h1>Клієнтам</h1>
+                <a href="./About_us.html">Про нас</a>
+                <a href="./pay_delivery.html">Оплата та доставка</a>
+                <a href="./return.html">Обмін та повернення</a>
+                <a href="./User_Agreement.html">Угода користувача</a>
+            </div>
+            <div class="footer_contacts">
+                <h1>Контактна інформація</h1>
+                <nav class="footer_contacts_viber">
+                    <img src="image/viber.png" alt="">
+                    <a href="viber://chat?number=+380505270310">
+                        <p>0505270310</p>
+                    </a>
+                </nav>
+                <a href="">
+                    <p class="footer_contacts_gmail">raftelstore.ua@gmail.com</p>
+                </a>
+                <p>Наші соцмережі</p>
+                <a href="https://www.facebook.com/profile.php?id=61559734116983">
+                    <img class="footer_contacts_facebook" src="image/facebook.png" alt="">
+                </a>
+            </div>
+            <div class="footer_maps">
+                <p>Київ, Україна</p>
+                <p>Графік роботи:</p>
+                <p>Будні: 10:00–20:00</p>
+                <p>СБ,НД: 10:00–18:00</p>
+            </div>
+        </footer>
+    </section>
+</body>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="./js/choos_prise.js"></script>
+<script src="./js/window menu.js"></script>
+<script src="./js/getCategories.js"></script>
+<script src="./js/basket.js"></script>
+<script>
+    let allProducts = [];
+    let currentPage = 1;
+    const itemsPerPage = 6;
+  
+    async function getProducts() {
+      const loader = document.getElementById('category-loader2');
+      const container = document.getElementById('product-list');
+  
+      loader.style.display = 'block';
+      container.innerHTML = '';
+  
+      try {
+        const res = await fetch('https://crm-raftel.vercel.app/api/products');
+        const data = await res.json();
+        const products = Array.isArray(data) ? data : data.products;
+  
+        const urlParams = new URLSearchParams(window.location.search);
+        const categoryFromURL = urlParams.get('category');
+  
+        allProducts = products.filter(product => product.category === categoryFromURL);
+  
+        renderProducts();
+      } catch (err) {
+        console.error('Помилка при завантаженні продуктів:', err);
+        container.innerHTML = '<p style="text-align:center; color:red; padding-top: 30px">Не вдалося завантажити продукти 😔</p>';
+      } finally {
+        loader.style.display = 'none';
+      }
+    }
+  
+    function renderProducts() {
+      const container = document.getElementById('product-list');
+      const selectedSizes = Array.from(document.querySelectorAll('input[name="size"]:checked')).map(cb => cb.value);
+      const maxPrice = parseInt(document.getElementById('priceRange').value, 10);
+      
+      const filtered = allProducts.filter(product => {
+        const matchesSize = selectedSizes.length === 0 || (product.size && selectedSizes.some(size => product.size.includes(size)));
+        const matchesPrice = !isNaN(product.price) && product.price <= maxPrice;
+        return matchesSize && matchesPrice;
+      });
+  
+      const totalPages = Math.ceil(filtered.length / itemsPerPage);
+      currentPage = Math.min(currentPage, totalPages || 1); // не виходити за межі
+  
+      const startIndex = (currentPage - 1) * itemsPerPage;
+      const paginated = filtered.slice(startIndex, startIndex + itemsPerPage);
+  
+      container.innerHTML = paginated.length
+        ? paginated.map(product => `
+          <div class="list_box">
+            <a href='product.html?productId=${product._id}'>
+              <img src="${product.images?.[0] || ''}" alt="">
+              <nav class="list_box_artikul">Артикул:${product.article || '---'}</nav>
+              <p class="list_box_name">${product.name || 'Без назви'}</p>
+              <h2 class="list_box_price">${product.price} грн</h2>
+              <button class="list_box_button">Купити</button>
+            </a>
+          </div>
+        `).join('')
+        : '<p style="text-align:center;">Немає товарів за такими критеріями 😢</p>';
+  
+      // Оновити пагінацію
+      document.getElementById('pageNumber').textContent = currentPage;
+      document.getElementById('prevBtn').disabled = currentPage === 1;
+      document.getElementById('nextBtn').disabled = currentPage === totalPages || totalPages === 0;
+    }
+  
+    // Події
+    document.addEventListener('DOMContentLoaded', () => {
+      getProducts();
+  
+      document.querySelectorAll('input[name="size"]').forEach(cb => {
+        cb.addEventListener('change', () => {
+          currentPage = 1;
+          renderProducts();
+        });
+      });
+  
+      const priceRange = document.getElementById('priceRange');
+      const priceValue = document.getElementById('priceValue');
+  
+      priceRange.addEventListener('input', () => {
+        priceValue.textContent = priceRange.value;
+        currentPage = 1;
+        renderProducts();
+      });
+  
+      document.getElementById('prevBtn').addEventListener('click', () => {
+        if (currentPage > 1) {
+          currentPage--;
+          renderProducts();
+        }
+      });
+  
+      document.getElementById('nextBtn').addEventListener('click', () => {
+        currentPage++;
+        renderProducts();
+      });
+    });
+  </script>
+   
+</html>

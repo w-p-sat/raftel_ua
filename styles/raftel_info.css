@@ -1,0 +1,89 @@
+.box{
+    max-width: 1920px;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 1);
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(7, 63, 0, 1) 100%);
+}
+.main{
+    padding: 50px 50px 25px 50px;
+    text-align: center;
+}
+@media(max-width:450px){
+    .main{
+        padding: 50px 15px 25px 15px;
+    }
+}
+.main_title{
+    color: aliceblue;
+    padding-bottom: 25px;
+    font-size: 28px;
+}
+.main_title_nezovsim{
+    color: aliceblue;
+    font-size: 22px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 25px;
+}
+.main_text{
+    color: aliceblue;
+    font-size: 18px;
+    line-height: 35px;
+}
+.blok_text{ 
+    text-align: -webkit-center;
+}
+.text_konez{
+    padding-top: 25px;
+    color: aliceblue;
+    font-size: 18px;
+}
+.blok_pay{
+    text-align: left;
+}
+.blok_pay_title{
+    padding: 25px 0px;
+    font-size: 22px;
+    color: aliceblue;
+}
+.blok_pay_title_punkt{
+    padding: 25px 0px;
+    font-size: 19px;
+    color: aliceblue;
+}
+.blok_pay p{
+    color: aliceblue;
+    line-height: 40px;
+}
+.main_block{
+    text-align: left;
+}
+.main_block h1, h2, h3, h4, p, li{
+    color: aliceblue;
+}
+.main_block h1{
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+.main_block h2{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.main_block h3{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.main_block h4{
+    font-size: 16px;
+    margin: 25px 0;
+}
+.main_block p{
+    margin-bottom: 10px;
+    line-height: 25px;
+    font-size: 16px;
+}
+.main_block li{
+    line-height: 15px;
+    margin: 0 0px 25px 25px;
+}
